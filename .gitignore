@@ -1,0 +1,19 @@
+# Environment and API Secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# Authentication & Keys
+keys/
+credentials.json
+client_secret*.json
+
+# Logs & Runtime
+*.log
+npm-debug.log*
+.DS_Store
+
+# Temporary files
+scratch/
+tmp/

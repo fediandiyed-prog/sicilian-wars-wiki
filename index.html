@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An encyclopedic reference on the Sicilian Wars (Greco-Punic Wars, 580–265 BC) between Carthage and Syracuse.">
+  <title>Sicilian Wars (Greco-Punic Wars) — Wikipedia Reader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sticky Wikipedia Top Navigation -->
+  <header class="top-header">
+    <div class="header-left">
+      <span class="wiki-wordmark">WIKIPEDIA</span>
+      <span class="wiki-tag">The Free Encyclopedia</span>
+    </div>
+    <div class="header-center">
+      <div class="search-wrapper">
+        <input type="search" id="search-input" placeholder="Search sections, battles, figures..." aria-label="Search content">
+      </div>
+    </div>
+    <div class="header-right">
+      <button id="theme-btn" class="theme-toggle" aria-label="Toggle theme">🌙 Dark</button>
+    </div>
+  </header>
+
+  <!-- Sub-Navigation Tabs -->
+  <nav class="sub-nav" aria-label="Article navigation tabs">
+    <div class="nav-container">
+      <button class="nav-tab active" data-tab="overview">Overview &amp; Wars</button>
+      <button class="nav-tab" data-tab="figures">Key Figures</button>
+      <button class="nav-tab" data-tab="battles">Major Battles</button>
+      <button class="nav-tab" data-tab="privacy">Privacy &amp; Terms</button>
+    </div>
+  </nav>
+
+  <main class="page-container">
+    <!-- Collapsible Table of Contents -->
+    <aside class="toc-sidebar" id="toc-panel">
+      <div class="toc-header">
+        <span>Contents</span>
+        <button id="toc-toggle" class="toc-toggle-btn">[hide]</button>
+      </div>
+      <ol id="toc-list" class="toc-list"></ol>
+    </aside>
+
+    <!-- Main Content Area -->
+    <section class="main-body">
+      <h1 id="page-title" class="page-heading">Sicilian Wars</h1>
+      <div class="page-subtitle">From Wikipedia, the free encyclopedia</div>
+
+      <!-- Infobox Container (stacked on mobile, floated on desktop) -->
+      <aside id="infobox-container" class="infobox-wrapper"></aside>
+
+      <!-- Dynamic Article Container -->
+      <div id="article-content" class="article-content"></div>
+    </section>
+  </main>
+
+  <!-- Wikipedia / Legal Compliance Footer -->
+  <footer class="wiki-footer">
+    <div class="footer-container">
+      <p>Text is available under the <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-ShareAlike License 4.0</a>. Additional terms may apply.</p>
+      <p>
+        <a href="#privacy" id="privacy-link">Privacy Policy</a> • 
+        <a href="#disclaimers" id="disclaimer-link">Disclaimers</a> • 
+        <a href="https://github.com" target="_blank" rel="noopener">Hosted on GitHub Pages</a> • 
+        No cookies collected • No user tracking • 100% Client-Side
+      </p>
+    </div>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
